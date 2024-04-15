@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+ .the-card .the-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    height: 75.590551181px;
+    width: 188.97637795px;
+    border: 1px solid black;
+}
+
+
+
+#text-logo{
+    font-size: 8px;
+}
+.the-card .the-card-left{
+    flex: 1.45;
+}
+    .under{
+        border-bottom: 1px solid black; /* or your desired color */
+    width: 90%;
+    font-size: 9.3px;
+    }
+    .the-card .the-card-right{
+    flex: 0.65  ;
+    padding-right: 10px;}
+.the-card .the-card-logo{
+    margin-top: 5px;
+    padding-right: 12px;
+}

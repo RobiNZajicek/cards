@@ -1,0 +1,107 @@
+.Navbar {
+    display: flex;
+    background: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px;
+    padding-top: 0px;
+}
+.Navbar .logo {
+    width: auto;
+    height: 100%;
+    text-transform: none;
+}
+.Navbar nav {
+    display: flex;
+    flex-direction: row;  
+    padding-right: 2rem;
+    padding-top: 15px;
+    align-items: center;
+}
+.deleteButton{
+    background: red;
+    height: 2rem;
+    fill: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 7px;
+}
+#li {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    padding: 5px 0;
+    flex-direction: row;
+    margin: 0px 10px;
+    border: 3px solid transparent;
+    text-transform: none;
+    transition: 0.2s;
+}
+    
+    .activeLink::before {
+        content: "";
+  display: inline-block; /* Ensures the pseudo-element is treated as an inline-block element */
+  width: 25px;
+  height: 25px;
+  background: url('../../assets/NavbarLogo.jpg') no-repeat center center;
+  background-size: cover; /* This property ensures the image covers the entire box */
+  margin-right: -27px;
+  margin-top: 7px;
+    }
+    .activeLink{
+        display: flex;
+        justify-content: center;
+    }
+   .Navbar button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 2px solid black;
+        background-color: #fff;
+        cursor: pointer;
+        box-shadow: 0 0 10px #333;
+        overflow: hidden;
+        transition: .3s;
+        margin-left: 2rem;
+    }
+    .Navbar button:hover {
+        background-color: rgb(246, 136, 136);
+        transform: scale(1.2);
+        box-shadow: 0 0 4px #111;
+        transition: .3s;
+    }
+    .Navbar svg {
+        color: black;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s;
+    }
+    .Navbar button:focus svg {
+        opacity: 0;
+        transition: .3s;
+    }.Navbar span {
+        width: 150px;
+        position: absolute;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        color: rgb(231, 50, 50);
+        font-weight: 600;
+        transition: .3s;
+    }.Navbar  button:focus {
+        width: 150px;
+        height: 50px;
+        transition: .3s;
+    }
+    .Navbar button:focus span {
+        opacity: 1;
+        transition: .3s;
+    }

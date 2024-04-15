@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Form from './components/Form/Form';
+import SharedLayout from './SharedLayout';
+import CardPage from './components/CardPage/CardPage';
+
+const App = () => {
+  return <BrowserRouter>
+            <Routes>
+      <Route path='/' element={<SharedLayout />}>
+               <Route path='/' element={<Form />} />
+               <Route path='Card' element={<CardPage />} />
+        </Route>
+            </Routes>
+  </BrowserRouter>
 }
 
-export default App;
+export default App

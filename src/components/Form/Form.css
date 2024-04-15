@@ -1,0 +1,33 @@
+.Form{
+    margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#text-logo{
+    font-size: 8px;
+}
+.the-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    height: 75.590551181px;
+    width: 188.97637795px;
+    border: 1px solid black;
+}
+.the-card-left{
+    flex: 1.45;
+}
+    .under{
+        border-bottom: 1px solid black; /* or your desired color */
+    width: 90%;
+    font-size: 9.3px;
+    }
+.the-card-right{
+    flex: 0.65  ;
+}
+.the-card-logo{
+    margin-top: 5px;
+    padding-right: 12px;
+}
